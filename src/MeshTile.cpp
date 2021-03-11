@@ -207,7 +207,8 @@ MeshTile::MeshTile(const TileCoordinate &coord):
  */
 void 
 MeshTile::writeFile(const char *fileName, bool writeVertexNormals) const {
-  CTBZFileOutputStream ostream(fileName);
+  //CTBZFileOutputStream ostream(fileName);
+  CTBFileOutputStream ostream(fileName);
   writeFile(ostream);
 }
 
